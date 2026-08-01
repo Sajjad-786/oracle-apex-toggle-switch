@@ -1,0 +1,149 @@
+/* ======================================================================
+   S&H Software Solutions
+   Segmented Toggle Switch - Oracle APEX Item Plugin
+   ----------------------------------------------------------------------
+   Component : Stylesheet
+   Version   : 1.1.0
+   Date      : 2026-07-31
+   Author    : S&H Software Solutions
+   License   : MIT License. This code is free and open to use, modify,
+               and redistribute, with or without attribution, for
+               personal or commercial projects.
+   ----------------------------------------------------------------------
+   All classes are prefixed with "sh-tgl-" to avoid conflicts with
+   Universal Theme classes or other plugins.
+   ====================================================================== */
+
+.sh-tgl-switch {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 34px;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Width/height scale with the standard APEX item size attribute */
+.t-Form-fieldContainer--large .sh-tgl-switch {
+  width: 300px;
+  height: 42px;
+}
+
+.t-Form-fieldContainer--xlarge .sh-tgl-switch {
+  width: 400px;
+  height: 50px;
+}
+
+.t-Form-fieldContainer--stretchInputs .sh-tgl-switch {
+  width: 100%;
+}
+
+/* -------------------- Outer track -------------------- */
+.sh-tgl-toggle {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  border-radius: 999px;
+  overflow: hidden;
+  border-style: solid;
+  /* border-color and border-width are set inline via PL/SQL based on
+     the plugin's "Border Color" / "Border Thickness" custom
+     attributes, so no fixed value is defined here. */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sh-tgl-switch:hover .sh-tgl-toggle {
+  box-shadow:
+    inset 0 1px 3px rgba(0, 0, 0, 0.08),
+    0 0 0 4px rgba(58, 109, 240, 0.10);
+}
+
+/* -------------------- Sliding knob -------------------- */
+.sh-tgl-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: calc(100% - 4px);
+  border-radius: 999px;
+  z-index: 1;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.18),
+    0 0 0 0 rgba(58, 109, 240, 0.35);
+  transition:
+    transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.3s ease;
+}
+
+.sh-tgl-switch:hover .sh-tgl-knob {
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.22),
+    0 0 0 6px rgba(58, 109, 240, 0.12);
+}
+
+/* -------------------- Segments -------------------- */
+.sh-tgl-segment {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #5f5e5a;
+  padding: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+  outline: none;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+
+.sh-tgl-segment:focus {
+  outline: none;
+}
+
+.sh-tgl-segment:hover:not(.sh-tgl-segment--active) {
+  color: #2b2a28;
+  transform: scale(1.03);
+}
+
+.sh-tgl-switch.sh-tgl-using-keyboard .sh-tgl-segment:focus {
+  outline: 2px solid rgba(58, 109, 240, 0.6);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+.sh-tgl-segment--active {
+  color: #ffffff;
+}
+
+.t-Form-fieldContainer--large .sh-tgl-segment {
+  font-size: 14px;
+}
+
+.t-Form-fieldContainer--xlarge .sh-tgl-segment {
+  font-size: 15px;
+}
+
+/* -------------------- Click ripple effect -------------------- */
+.sh-tgl-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  transform: scale(0);
+  animation: sh-tgl-ripple-anim 0.5s ease-out;
+  pointer-events: none;
+  z-index: 3;
+}
+
+@keyframes sh-tgl-ripple-anim {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
