@@ -151,9 +151,13 @@ The files under `src/` are the same code that is embedded in the plug-in export,
 
 | | |
 |---|---|
-| Author | Sajjad Hanifa |
+| Author | [Sajjad Hanifa](https://www.linkedin.com/in/sajjad-hanifa/) |
 | Vendor | S&H Software Solutions |
 | Version | 1.0.0 |
 | License | [MIT](LICENSE) |
+
+### 🙏 Contributors
+
+Thanks to [Hassaan Ahmed Tahir](https://www.linkedin.com/in/hassaan-ahmed-tahir-5a385b2a1/) for contributing to this plug-in.
 
 Found a bug or have a suggestion? Open an [issue](https://github.com/Sajjad-786/oracle-apex-toggle-switch/issues).
