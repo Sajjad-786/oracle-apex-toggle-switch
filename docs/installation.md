@@ -171,7 +171,21 @@ Session state holds a value that matches none of the LOV return values — a com
 ---
 
 ## 🗑️ Uninstalling
+---
 
+## 📄 About
+
+**Toggle Switch** — an item plug-in for Oracle APEX.
+
+| | |
+|---|---|
+| Author | Sajjad Hanifa |
+| Vendor | S&H Software Solutions |
+| Version | 1.0.0 |
+| License | [MIT](../LICENSE) |
+| Repository | [oracle-apex-toggle-switch](https://github.com/Sajjad-786/oracle-apex-toggle-switch) |
+
+Found a bug or have a suggestion? Open an [issue](https://github.com/Sajjad-786/oracle-apex-toggle-switch/issues).
 1. Change any page items using the plug-in to a different type
 2. Go to **Shared Components → Plug-ins**
 3. Open **Toggle switch** and click **Delete**
