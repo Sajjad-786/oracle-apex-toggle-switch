@@ -11,17 +11,29 @@ The native APEX switch handles exactly two fixed values. This one is driven by a
 ![Toggle Switch in action](screenshots/toggle.gif)
 
 ---
-
 ## ✨ Features
+
+<table border="0">
+<tr>
+<td width="65%" valign="top">
 
 - 🔀 **LOV-driven** — static values, SQL query or a shared List of Values
 - 🔢 **Any number of options** — two, three, five; one segment per entry
 - 🎨 **Configurable colors** — track, knob and border, each with a color picker
 - 📏 **Configurable border** — from hairline to heavy frame, or none at all
-- 📐 **Standard APEX sizing** — Default, Large, X-Large and Stretch all work as expected
+- 📐 **Standard APEX sizing** — Default, Large, X-Large and Stretch
 - ⌨️ **Keyboard accessible** — Tab to focus, Enter or Space to select
-- 💾 **Behaves like a normal item** — session state, submit, Dynamic Actions, all standard
-- 🪶 **Zero dependencies** — no icon fonts, no JavaScript libraries, no database objects
+- 💾 **Behaves like a normal item** — session state, submit, Dynamic Actions
+- 🪶 **Zero dependencies** — no icon fonts, no libraries, no database objects
+
+</td>
+<td width="35%" valign="top">
+
+![Login page example](screenshots/login_page.gif)
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -29,7 +41,7 @@ The native APEX switch handles exactly two fixed values. This one is driven by a
 
 Used as an auto-login selector on a login page:
 
-![Login page example](screenshots/login_page.gif)
+![Login page example](screenshots/login-page.jpg)
 
 The labels support emoji, which is a cheap way to add meaning without pulling in an icon font.
 
