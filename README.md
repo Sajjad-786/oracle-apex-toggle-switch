@@ -29,7 +29,7 @@ The native APEX switch handles exactly two fixed values. This one is driven by a
 
 Used as an auto-login selector on a login page:
 
-![Login page example](screenshots/Login-page.jpg)
+![Login page example](screenshots/login_page.gif)
 
 The labels support emoji, which is a cheap way to add meaning without pulling in an icon font.
 
