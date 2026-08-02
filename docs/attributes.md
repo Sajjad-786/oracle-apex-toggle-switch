@@ -174,3 +174,18 @@ Create the item, set the LOV, done. The switch renders in the default blue-on-li
 | Toggle color | `#0a5c36` |
 | Border color | `#0a5c36` |
 | Border thickness | `3` |
+---
+
+## 📄 About
+
+**Toggle Switch** — an item plug-in for Oracle APEX.
+
+| | |
+|---|---|
+| Author | Sajjad Hanifa |
+| Vendor | S&H Software Solutions |
+| Version | 1.0.0 |
+| License | [MIT](../LICENSE) |
+| Repository | [oracle-apex-toggle-switch](https://github.com/Sajjad-786/oracle-apex-toggle-switch) |
+
+Found a bug or have a suggestion? Open an [issue](https://github.com/Sajjad-786/oracle-apex-toggle-switch/issues).
